@@ -1,0 +1,157 @@
+#back{
+    background-size: cover;
+    background-image: url('https://media.istockphoto.com/id/1058444714/photo/abstract-blur-beauty-skyline-scene-with-colorful-background-and-bright-light-effect-for.jpg?s=612x612&w=0&k=20&c=ArqfwH9BPCmd9BiB8j1Af74G_7BD8nUImFipYi5DeoE=');
+    padding: 30px;
+    margin: 30PX;
+    border: 5px solid rgba(20, 20, 228, 0.913);
+    /* box-shadow: 0px 0px 10px 5px rgb(250, 2, 2); */
+    border-width: 5px;
+    border-style: solid;
+    background-position: right;
+}
+h1, h2{
+    text-align: center;
+   
+}
+.box, .box1{
+    /* color: white; */
+    font-family: Bree Serif;
+    background-color:  rgba(8, 62, 241, 0.845);
+    box-shadow: inset rgb(222, 232, 131) 0 0 0 2px ;
+    border-radius: 4px;
+    padding: 5px;
+
+
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.input-section input[type="number"],
+.input-expense input[type="text"],
+.input-section input[type="date"]{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: #fa0202c6 ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#expense-input{
+    height: 30px;
+}
+#amount-input{
+    height: 22px;
+}
+#date-input{
+    height: 22px;
+}
+#add-btn{
+    height: 35px;
+}
+#category-select{
+    
+    height: 35px;
+    margin-left:3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid rgb(107, 142, 142);
+}
+
+th {
+    background-color: rgba(8, 62, 241, 0.845);
+    color: rgb(12,1,1);
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+
+.delete-button {
+    background-color: #ff2014;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit-button{
+    background-color: #ff2014;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#add-btn:hover{
+     background-color: #39db44;
+}
+.delete-button:hover {
+    background-color: #39db44;
+}
+
+.edit-button:hover{
+    background-color: #39db44;
+}
+
+/* For tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input, select, button {
+        width: 100%; /* Full width for better layout */
+        max-width: none;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .input-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    input, select, button {
+        width: 100%; /* Take up full width on mobile */
+    }
+
+    table {
+        font-size: 8px;
+    }
+
+    th, td {
+        padding: 3px;
+    }
+}
